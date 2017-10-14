@@ -1,18 +1,17 @@
-*{margin: 0 auto;width:80%}
-body{font-size: 62.5%;}
-ul{list-style: none;}
+body{
+    font-size: 62.5%;
+}
+ul{
+    list-style: none;
+    display: block;
+    padding-left: 8%;
+}
 li{
-    margin: 0.5%;
     display: inline-block;
-    width: auto;
-    padding:12%;
+    margin: 0.5%;
+    padding:14%;
     background-color: darkorange;
     border-radius: 1rem;
 }
-li:nth-child(1){
-    display: block;
-    background-color: white;
-    margin: 0;
-    padding: 5%;
-}
+
 
