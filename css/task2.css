@@ -1,13 +1,13 @@
 *{
     margin: 0;
     padding:0;
+    font-size: 1.5rem;
 }
 .clear{
     clear: both;
 }
 body{
     font-size:62.5%;
-    /*font-size: 1rem;*/
     color: white;
 }
 .wp{
@@ -24,6 +24,7 @@ table{
 }
 .z{
     text-align: left;
+    padding-left: 1rem;
 }
 .center{
     text-align: center;
@@ -33,6 +34,7 @@ table{
 ul{
     text-decoration: none;
     text-align: right;
+    padding-right: 1rem;
 }
 li{
     display: inline-block;
@@ -67,7 +69,7 @@ p{
 }
 .float{
     width: 100%;
-    padding-top: 50%;
+    padding-top: 30%;
 }
 .left{
     float: left;
