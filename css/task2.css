@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.clear{
+    clear: both;
+}
+body{
+    font-size:62.5%;
+    /*font-size: 1rem;*/
+    color: white;
+}
+.wp{
+    width: 80%;
+    margin: auto;
+}
+header{
+    width: 100%;
+    background-color: #22292c;
+}
+table{
+    width: 100%;
+    padding-bottom: 0.4rem;
+}
+.z{
+    text-align: left;
+}
+.center{
+    text-align: center;
+    position: relative;
+    left: -1rem;
+}
+ul{
+    text-decoration: none;
+    text-align: right;
+}
+li{
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: #f0f0f0;
+    border-radius: 1rem;
+}
+main{
+    background-color: #68cdd5;
+}
+.top{
+    background: url("../image/记录页_03.png") no-repeat;
+    background-position: left;
+    background-size:3rem;
+    width:100%;
+    height: 4rem;
+    margin-left: 2rem;
+}
+.center_s{
+    background: url("../image/整合透底.png")no-repeat;
+    background-position: center center;
+    background-size:16rem;
+    width:100%;
+    height: 10rem;
+}
+p{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 3rem;
+    line-height:3rem;
+}
+.float{
+    width: 100%;
+    padding-top: 50%;
+}
+.left{
+    float: left;
+    width: 50%;
+}
+.left_t{
+    background: url("../image/椭圆 1.png")no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 6rem;
+}
+.right{
+    float: left;
+    width: 50%;
+}
+.right_t{
+    background: url("../image/葡萄藤logo.png")no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 6rem;
+}
+h3{
+    text-align: center;
+    padding-bottom: 2rem;
+}
