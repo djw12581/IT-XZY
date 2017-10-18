@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 62.5%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    max-width: 100%;
+}
+button{
+    border-style: none;
+    outline: none;
+}
+.wp{
+    margin: 0 auto;
+    width: 91%;
+}
+header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    font-size: 1rem;
+    color: white;
+    background-color: #5fc0cd;
+    height: 4rem;
+}
+header button{
+    background-color: #5fc0cd;
+    float: left;
+    line-height: 4rem;
+}
+header button img{
+    width: 50%;
+    display: inline-table;
+    vertical-align: middle;
+}
+h2{
+    width: 100%;
+    line-height:4rem ;
+    text-align: center;
+}
+.s{
+    background:url("../image/image-task4/38a17cec12b0df5f8a4188382ba0e279e7c6e6def0df-X2hc7H.png")no-repeat;
+    width: 100%;
+    height:20rem;
+}
+.x{
+    margin-top: 0;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10rem;
+}
+li{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    border-bottom: solid 0.1rem #e5e5e5;
+}
+li:nth-child(1){
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+li:nth-child(1) div{
+    border-left: solid 0.2rem #68cdd5;
+    margin: 0.5rem;
+    padding:0 0.5rem;
+}
+li:nth-child(n+2){
+    font-size: 1.2rem;
+    color:#999999 ;
+}
+li:nth-child(n+2) span{
+    color:#333333;
+}
+li:nth-child(5) span{
+    color: #e26163;
+}
+li:nth-child(2) span:before{
+    content: url("../image/image-task4/形状 4 拷贝 3.png");
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    right:0;
+    left: 0;
+    height:6rem;
+}
+footer div{
+    width: 100%;
+    line-height: 6rem;
+    text-align: center;
+}
+.z{
+    border: 0.1rem solid ;
+    border-radius: 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    height: 4rem;
+    color: #68cdd5;
+    background-color: white;
+    font-size: 1.6rem;
+}
+.y{
+    background-color:#68cdd5 ;
+    color: white;
+    border-radius: 0.3rem;
+    display: inline-block;
+    vertical-align: middle;
+    width: 45%;
+    height: 4rem;
+    font-size: 1.6rem;
+}
+.zxc{
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 6.5rem;
+}
+.left{
+    margin: auto 2rem;
+}
+.top1{
+    color: white;
+    font-size: 1.6rem;
+}
+.bottom{
+    color: white;
+    font-size: 1.2rem;
+}
+.bottom:before{
+    content: url("../image/image-task4/Shape 4.png");
+}
+@media (max-width: 660px) {
+    li:nth-child(6) span{
+        font-size: 1rem;
+        width:50%;
+        word-wrap: break-word;
+    }
+}
+@media (max-width: 565px) {
+    li:nth-child(6) span{
+        font-size: 0.5rem;
+        width:50%;
+        word-wrap: break-word;
+    }
+}
