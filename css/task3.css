@@ -1,0 +1,119 @@
+*{margin: 0;}
+html{
+    width: 100%;
+}
+body{
+    font-size: 62.5%;
+    color: white;
+}
+.clear{
+    clear: both;
+}
+header{
+    background-color:#5fc0cd;
+    width:100%;
+}
+span{font-size: 1.2rem;height: 3rem;}
+/*浮动实现宽度自适应（中间部分转化为行内块级元素设置宽高居中）*/
+.a{ float: left;line-height: 3rem;margin-left: 0.2rem}
+.b{
+    font-size: 1.4rem;
+    line-height: 3rem;
+    width:90%;
+   display: inline-table;
+    text-align: center;
+}
+.c {
+    /*float: right;*/
+    /*line-height: 3rem;*/
+    /*margin-right: 0.2rem;*/
+    position: absolute;
+    right: 0.1rem;
+    top:0.7rem;
+}
+/*inline-table实现宽度自适应*/
+/*span{font-size: 1.2rem;height: 3rem;display: inline-table;width:33%}*/
+/*.a{text-align: left;line-height: 3rem;}*/
+/*.b{text-align: center;line-height: 3rem;}*/
+/*.c{text-align: right;line-height: 3rem;}*/
+main{
+    width: 100%;
+    height: 30rem;
+    background-color: #eff0f4;
+    overflow: hidden;
+}
+.s,.x{
+    width: 100%;
+    height: 4.5rem;
+    background-color: white;
+}
+.z1{
+    margin:1rem 1.2rem;
+    background: url("../image/image_task3/iphone.png")no-repeat;
+    background-size: auto;
+    background-position: left;
+    height:100%;
+}
+.z2{
+    margin:1rem 1.2rem;
+    background: url("../image/image_task3/locked 2.png")no-repeat;
+    background-size: auto;
+    background-position: left;
+    height:100%;
+}
+input{
+
+    text-decoration-color: #22292c;
+    outline: none;
+    border-left-color: #eff0f4 ;
+    border-bottom: none;
+    border-right: none;
+    border-top: none;
+    height: 4.4rem;
+}
+.y1{
+    font-size: 1.4rem;
+    line-height:4.5rem ;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+}
+.y2{
+    font-size: 1.4rem;
+    line-height:4.5rem ;
+    display: inline-block;
+    margin-left: 10%;
+    text-align: center;
+}
+footer{
+    margin: 5% 0;
+    width: auto;
+    background-color: #5fc0cd;
+}
+footer button{
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-size: 1.4rem;
+    width: 100%;
+    height: 4rem;
+    outline: none;
+}
+#last{
+    float: right;
+    margin: 1rem;
+}
+#last a{
+    color: #5fc0cd;
+    text-decoration: none;
+    font-size:1.4rem ;
+}
+@media  (max-width: 415px) {
+    .b{
+        position: absolute;
+        left: 1rem;
+    }
+    .y1,.y2{
+        margin-left: 20%;
+    }
+}
