@@ -108,3 +108,9 @@ footer button{
     text-decoration: none;
     font-size:1.4rem ;
 }
+@media  (max-width: 415px) {
+    .b{
+        position: absolute;
+        left: 1rem;
+    }
+}
