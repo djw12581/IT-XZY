@@ -88,10 +88,6 @@ button:nth-child(3){
     border-right: none;
 }
 /*中间列表*/
-main{
-    width: 100%;
-    height: 10rem;
-}
 ul{
     list-style: none;
     text-decoration: none;
@@ -99,6 +95,7 @@ ul{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 0.2rem;
+    padding-bottom: 5rem;
 }
 li{
     width: 100%;
@@ -163,29 +160,34 @@ h1:last-child:before{
     /*position: absolute;*/
     /*bottom: 0;*/
 /*}*/
-main button{
+footer{
+    width: 100%;
+    position: fixed;
+    bottom: 1rem;
+}
+footer button{
     border: none;
     margin-top: 1rem;
 }
-main button:nth-child(1) img{
+footer button:nth-child(1) img{
     float: right;
 }
-main button:nth-child(2) a{
+footer button:nth-child(2) a{
     background-color: #5fc0cd;
     width: 5rem;
     height: 5rem;
     border-radius:2.5rem;
     margin-top: -0.5rem;
 }
-main button:nth-child(2) a img{
+footer button:nth-child(2) a img{
     padding-top: 0.5rem;
     padding-left: 0.4rem;
     /*width: 100%;*/
 }
-main button:nth-child(3) img{
+footer button:nth-child(3) img{
     float: left;
 }
-main button:after{
+footer button:after{
     display: none;
 }
 /*媒体查询*/
@@ -193,20 +195,20 @@ main button:after{
     *{
         font-size: 1.6rem;
     }
-    main button:nth-child(1) img{
+    footer button:nth-child(1) img{
         width: 30%;
     }
-    main button:nth-child(3) img{
+    footer button:nth-child(3) img{
         width: 25%;
     }
-    main button:nth-child(2) a{
+    footer button:nth-child(2) a{
         background-color: #5fc0cd;
         width: 3rem;
         height:3rem;
         border-radius: 1.5rem;
         margin-top: 0.2rem;
     }
-    main button:nth-child(2) a img{
+    footer button:nth-child(2) a img{
         padding-top: 0.1rem;
         padding-left: 0.3rem;
         width: 78%;
