@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 62.5%;
+    width: 100%;
+}
+header{
+    width: 100%;
+    height: 7rem;
+}
+.h_top{
+    width: 100%;
+    height: 3rem;
+    background-color: #5fc0cd;
+    padding: 0.2rem;
+}
+/*绝对定位图片*/
+.h_top img{
+    width:2rem;
+    position: absolute;
+    right: 2rem;
+    top: 0.8rem;
+}
+.h_top_button{
+    width:30%;
+    margin-left:33%;
+    margin-bottom: 0.2rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.8rem;
+    background-color: #55a8b3;
+}
+.h_top_button span{
+    width: 50%;
+    float: right;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color:#5fc0cd ;
+}
+/*顶部三按钮*/
+.h_bottom{
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*重写按钮样式*/
+button{
+    outline: hidden;
+    border:solid 0.1rem #999999;
+    border-left: none;
+    background-color: white;
+    width: 100%;
+}
+a{
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    color:#22292c ;
+    font-size: 1.5rem;
+    line-height: 4rem;
+}
+button:after{
+    border: 0.5rem solid #999999;
+    border-color:#999999 transparent transparent ;
+    content: "";
+    height: 0;
+    float: right;
+    z-index:9;
+    margin-top:-2.4rem;
+    margin-right:1rem;
+}
+button:nth-child(1){
+    border-left: none;
+}
+button:nth-child(3){
+    border-right: none;
+}
+/*中间列表*/
+main{
+    width: 100%;
+    height: 10rem;
+}
+ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0.2rem;
+}
+li{
+    width: 100%;
+    border:none;
+    border-bottom:1px solid #999999;
+    margin: 0.2rem;
+}
+/*改变列表中字体样式*/
+h3{
+    color: #999999;
+}
+h3+span{
+    font-size:1.6rem;
+}
+.y{
+    float: right;
+    font-size: 1.6rem;
+    color: #e63b0e;
+}
+/*右侧箭头*/
+.y:after{
+    float: right;
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    border-right: solid 0.2rem #5fc0cd;
+    border-top: solid 0.2rem #5fc0cd;
+    margin-left: 0.6rem;margin-top: 0.42rem;
+    transform:rotate(45deg) ;
+}
+.wp{
+    width: 90%;
+    margin: 0 auto;
+}
