@@ -30,6 +30,9 @@ header{
     background-color: #5fc0cd;
     height: 4rem;
 }
+main{
+    width: 100%;
+}
 header button{
     background-color: #5fc0cd;
     float: left;
