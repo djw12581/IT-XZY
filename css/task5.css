@@ -149,7 +149,7 @@ h1:nth-child(1):before{
     background-size: 100%;
     width:1.3rem;
     height: 1.3rem;
-    margin-left:-1rem;
+    margin-left:-2rem;
     margin-right: 0.6rem;
 }
 h1:last-child:before{
@@ -159,7 +159,7 @@ h1:last-child:before{
     background-size: 100%;
     width:1.3rem;
     height: 1.3rem;
-    margin-left:-1rem;
+    margin-left:-2rem;
     margin-right: 0.5rem;
 }
 /*底部布局*/
@@ -225,6 +225,12 @@ footer button:after{
     .h_top_button span{
         font-size:1.8rem ;
     }
+    h1:nth-child(1):before{
+        margin-left: -1rem;
+    }
+    h1:last-child:before{
+        margin-left: -1rem;
+    }
 }
 @media(max-width:380px ){
     .h_top_button{
@@ -235,7 +241,7 @@ footer button:after{
     }
     h1{
         padding: 2%;
-        padding-left:0 ;
+        padding-left: 1rem;
     }
     li .z,li .y{
         font-size: 2.0rem;
