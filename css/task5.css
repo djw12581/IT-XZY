@@ -12,30 +12,32 @@ header{
     height: 7rem;
 }
 main{
+    position: absolute;
     width: 100%;
 }
 .h_top{
     width: 100%;
     height: 3rem;
     background-color: #5fc0cd;
-    padding: 0.2rem;
+    padding-bottom: 0.1rem;
 }
 /*绝对定位图片*/
 .h_top img{
     width:2rem;
     position: absolute;
     right: 2rem;
-    top: 0.8rem;
+    top: 0.5rem;
 }
+/*顶部*/
 .h_top_button{
-    width:33%;
-    margin-left:33%;
+    width:33.3%;
+    margin-left:33.3%;
     margin-bottom: 0.2rem;
     line-height: 3rem;
     text-align: center;
     border-radius: 0.5rem;
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     background-color: #55a8b3;
 }
 .h_top_button span{
@@ -50,7 +52,6 @@ main{
 /*顶部三按钮*/
 .h_bottom{
     width: 100%;
-    height: 4rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -68,7 +69,6 @@ a{
     width: 100%;
     text-decoration: none;
     color:#22292c ;
-    font-size: 1.5rem;
     line-height: 4rem;
 }
 button:after{
@@ -95,7 +95,7 @@ ul{
     flex-direction: column;
     align-items: flex-start;
     padding-top: 0.2rem;
-    padding-bottom: 5rem;
+    padding-bottom:7rem;
 }
 li{
     width: 100%;
@@ -103,28 +103,38 @@ li{
     border-bottom:1px solid #999999;
     margin: 0.2rem;
 }
+/*截断显示点*/
+li .z{
+    display: inline-block;
+    width: 50%;
+    font-size: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+li .y{
+    display: inline-block;
+    float: right;
+    font-size: 3rem;
+    color: #e63b0e;
+}
 /*改变列表中字体样式*/
 h1{
     color: #999999;
-    padding: 1rem;
-}
-h1+span{
-    font-size:1.6rem;
-}
-.y{
-    float: right;
-    font-size: 1.6rem;
-    color: #e63b0e;
+    padding: 4%;
+    font-size: 2.5rem;
 }
 /*右侧箭头*/
 .y:after{
     float: right;
     content: "";
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-right: solid 0.2rem #5fc0cd;
     border-top: solid 0.2rem #5fc0cd;
-    margin-left: 0.6rem;margin-top: 0.42rem;
+    margin-left: 0.3rem;
+    margin-top: 0.6rem;
+    margin-right:0.3rem ;
     transform:rotate(45deg) ;
 }
 .wp{
@@ -133,8 +143,6 @@ h1+span{
 }
 /*列表前图标*/
 h1:nth-child(1):before{
-    /*content: url("../image/imag-task5/task5-3_03.jpg");*/
-
     content: "";
     background:url("../image/imag-task5/task5-3_06.jpg");
     display: inline-block;
@@ -143,7 +151,6 @@ h1:nth-child(1):before{
     height: 1.3rem;
     margin-left:-1rem;
     margin-right: 0.6rem;
-    /*background-size: 5%;*/
 }
 h1:last-child:before{
     content: "";
@@ -156,10 +163,6 @@ h1:last-child:before{
     margin-right: 0.5rem;
 }
 /*底部布局*/
-/*main{*/
-    /*position: absolute;*/
-    /*bottom: 0;*/
-/*}*/
 footer{
     width: 100%;
     position: fixed;
@@ -169,54 +172,78 @@ footer button{
     border: none;
     margin-top: 1rem;
 }
-footer button:nth-child(1) img{
-    float: right;
+footer button:nth-child(1) a{
+    /*float: right;*/
+    margin-left: 28%;
 }
 footer button:nth-child(2) a{
     background-color: #5fc0cd;
-    width: 5rem;
-    height: 5rem;
-    border-radius:2.5rem;
-    margin-top: -0.5rem;
+    width: 6rem;
+    height:6rem;
+    border-radius:3rem;
+    /*margin-top: -0.5rem;*/
 }
 footer button:nth-child(2) a img{
-    padding-top: 0.5rem;
+    padding-top: 1rem;
     padding-left: 0.4rem;
-    /*width: 100%;*/
 }
-footer button:nth-child(3) img{
-    float: left;
+footer button:nth-child(3) a{
+    /*float: left;*/
+    margin-left: -56%;
 }
 footer button:after{
     display: none;
 }
+#left{
+    color: #5fc0cd;
+    margin-top: -1rem;
+}
+#right{
+    margin-top: -1rem;
+}
+.h_bottom:target{
+
+}
+.h_bottom:not(:target){
+
+}
 /*媒体查询*/
-@media(max-width:420px )  {
-    *{
-        font-size: 1.6rem;
+@media(max-width:480px ){
+    h1{
+        padding: 2%;
+        font-size:1.8rem ;
     }
-    footer button:nth-child(1) img{
-        width: 30%;
+    li .z,li .y{
+        font-size: 2.5rem;
     }
-    footer button:nth-child(3) img{
-        width: 25%;
+    .h_bottom button a{
+        font-size: 2rem;
     }
-    footer button:nth-child(2) a{
-        background-color: #5fc0cd;
-        width: 3rem;
-        height:3rem;
-        border-radius: 1.5rem;
-        margin-top: 0.2rem;
+    .h_top_button{
+        font-size: 1.8rem;
     }
-    footer button:nth-child(2) a img{
-        padding-top: 0.1rem;
-        padding-left: 0.3rem;
-        width: 78%;
+    .h_top_button span{
+        font-size:1.8rem ;
+    }
+}
+@media(max-width:380px ){
+    .h_top_button{
+        font-size: 1.5rem;
+    }
+    .h_top_button span{
+        font-size:1.5rem ;
+    }
+    h1{
+        padding: 2%;
+        padding-left:0 ;
+    }
+    li .z,li .y{
+        font-size: 2.0rem;
+    }
+    .h_bottom button a{
+        font-size: 1.8rem;
     }
     .y:after{
-        width: 0.8rem;
-        height: 0.8rem;
-        border-right: solid 0.1rem #5fc0cd;
-        border-top: solid 0.1rem #5fc0cd;
+        margin-top: 0.3rem;
     }
 }

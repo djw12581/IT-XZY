@@ -1,0 +1,36 @@
+ul li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33.3%;
+    height: 10px;
+    padding: 50px;
+    border: solid 1px red;
+    margin: 10px;
+    position: relative;
+}
+.menu:not(:target){
+    display: none;
+}
+.menu:target{
+    display: block;
+}
+.menu:target li:hover{
+    color: #4D926F;
+}
+/*动画效果*/
+/*.fgy{*/
+    /*position: absolute;*/
+    /*top:50%;*/
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    /*transform: translateY(-50%);*/
+    /*background-color: #5fc0cd;*/
+    /*width: 6px;*/
+    /*height:6px;*/
+    /*border-radius:3px;*/
+/*}*/
+/*.fgy:hover{*/
+    /*transform:scale(100,100);*/
+    /*transition:all 3s ease 0s;*/
+/*}*/
