@@ -17,7 +17,7 @@ main{
 }
 .h_top{
     width: 100%;
-    height: 4rem;
+    height: 3.5rem;
     background-color: #5fc0cd;
     padding-bottom: 0.1rem;
 }
@@ -25,29 +25,29 @@ main{
 .h_top img{
     width:3rem;
     position: absolute;
-    right: 3rem;
-    top: 0.6rem;
+    right: 1rem;
+    top: 0.3rem;
 }
 /*顶部*/
 .h_top_button{
     width:33.3%;
     margin-left:33.3%;
-    line-height: 4rem;
+    line-height: 3.5rem;
     text-align: center;
     border-radius: 0.5rem;
     color: white;
-    font-size: 3rem;
+    font-size: 2.8rem;
     background-color: #55a8b3;
 }
 .h_top_button span{
     width: 50%;
     float: right;
     text-align: center;
-    line-height: 4rem;
+    line-height: 3.5rem;
     border-radius: 0.5rem;
     background-color: white;
     color:#5fc0cd ;
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 /*顶部三按钮*/
 .h_bottom{
@@ -111,7 +111,7 @@ li{
 li .z{
     display: inline-block;
     width: 50%;
-    font-size: 3rem;
+    font-size:2.8rem;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -120,7 +120,7 @@ li .z{
 li .y{
     display: inline-block;
     float: right;
-    font-size: 3rem;
+    font-size: 2.8rem;
     color: #e63b0e;
 }
 /*改变列表中字体样式*/
@@ -206,55 +206,44 @@ footer button:after{
 #right{
     margin-top: -1rem;
 }
-.h_bottom:target{
-
-}
-.h_bottom:not(:target){
-
-}
 /*媒体查询*/
-/*@media(max-width:480px ){*/
-    /*h1{*/
-        /*padding: 2%;*/
-        /*font-size:1.8rem ;*/
-    /*}*/
-    /*li .z,li .y{*/
-        /*font-size: 2.5rem;*/
-    /*}*/
-    /*.h_bottom button a{*/
-        /*font-size: 2rem;*/
-    /*}*/
-    /*.h_top_button{*/
-        /*font-size: 1.8rem;*/
-    /*}*/
-    /*.h_top_button span{*/
-        /*font-size:1.8rem ;*/
-    /*}*/
-    /*h1:nth-child(1):before{*/
-        /*margin-left: -1rem;*/
-    /*}*/
-    /*h1:last-child:before{*/
-        /*margin-left: -1rem;*/
-    /*}*/
+@media (max-width: 550px ) {
+    html{
+        font-size: 55%;
+    }
+    .y:after{
+        width: 1rem;
+        height: 1rem;
+        border-right: solid 0.2rem #5fc0cd;
+        border-top: solid 0.2rem #5fc0cd;
+    }
+}
+@media (max-width: 448px ) {
+    html{
+        font-size: 48%;
+    }
+    .h_top img{
+        width:2.5rem;
+        position: absolute;
+        right: 1rem;
+        top: 0.6rem;
+    }
 /*}*/
-/*@media(max-width:380px ){*/
-    /*.h_top_button{*/
-        /*font-size: 1.5rem;*/
-    /*}*/
-    /*.h_top_button span{*/
-        /*font-size:1.5rem ;*/
-    /*}*/
-    /*h1{*/
-        /*padding: 2%;*/
-        /*padding-left: 1rem;*/
-    /*}*/
-    /*li .z,li .y{*/
-        /*font-size: 2.0rem;*/
-    /*}*/
-    /*.h_bottom button a{*/
-        /*font-size: 1.8rem;*/
-    /*}*/
-    /*.y:after{*/
-        /*margin-top: 0.3rem;*/
-    /*}*/
-/*}*/
+@media (max-width: 400px ) {
+    html {
+        font-size: 38%;
+        }
+
+    .h_top img {
+        width: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        }
+
+    .y:after {
+        width: 0.6rem;
+        height: 0.6rem;
+        }
+    }
+}
