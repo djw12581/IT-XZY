@@ -1,0 +1,104 @@
+/*全局定义*/
+*{
+    margin: 0;
+    padding: 0;
+    font:  2.4rem 楷体;
+}
+html{
+    font-size: 62.5%;
+}
+ul,li{
+    list-style: none;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    font-size: 3rem;
+    color: white;
+}
+div{
+    border: solid 1px #9d9d9d;
+}
+/*header部分*/
+header{
+    width: 100%;
+    background-color: #29bde0;
+    padding: 6%;
+    position: fixed;
+    z-index: 9999;
+}
+/*main部分*/
+main{
+    padding-top:12%;
+    padding-bottom: 2%;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: #efefef;
+    overflow: hidden;
+}
+/*居中类center*/
+.center{
+    margin:0 auto;
+    width:80%;
+    text-align: center;
+    border: none;
+}
+.center>div{
+   background-color: white;
+    margin:3% auto;
+    padding: 4%;
+    color: #9a9a9a;
+}
+.center>div+div{
+    margin:0;
+    color:  #fbb435;
+    border-bottom-color: #fbb435;
+}
+.center .manu{
+    border-top-color: #fbb435;
+    border-bottom-color: #999999;
+}
+.TS{
+    padding: 4%;
+    background-color: #5fc0cd;
+    position: relative;
+}
+.TS:hover:after{
+    position: absolute;
+    content: "";
+    border-left:2rem solid #fbb435;
+    border-top: 2rem solid transparent;
+    border-bottom: 2rem solid transparent;
+    height:0;
+    width: 0;
+    right:-4rem;
+    top:1.2rem;
+}
+.X{
+    border: none;
+    margin: 4%;
+    color: #9a9a9a;
+}
+/*底部圆圈*/
+div ul li{
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #efefef;
+    width: 1rem;
+    height: 1rem;
+}
+/*媒体查询*/
+@media (max-width:560px){
+    main{
+        /*position: absolute;*/
+        /*top:0;*/
+        /*left: 0;*/
+        /*right: 0;*/
+        /*bottom: 0;*/
+        /*z-index: -1;*/
+    }
+}
