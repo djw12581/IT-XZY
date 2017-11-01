@@ -31,12 +31,6 @@ header{
 main{
     padding-top:12%;
     padding-bottom: 2%;
-    position: absolute;
-    top:0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
     background-color: #efefef;
     overflow: hidden;
 }
@@ -92,13 +86,59 @@ div ul li{
     height: 1rem;
 }
 /*媒体查询*/
-@media (max-width:560px){
-    main{
-        /*position: absolute;*/
-        /*top:0;*/
-        /*left: 0;*/
-        /*right: 0;*/
-        /*bottom: 0;*/
-        /*z-index: -1;*/
+@media (max-width: 500px){
+    .TS:hover:after{
+        border-left:1.6rem solid #fbb435;
+        border-top: 1.6rem solid transparent;
+        border-bottom: 1.6rem solid transparent;
+        right:-2.5rem;
+        top:0.8rem;
+    }
+}
+@media (max-width:400px){
+    html{
+       font-size: 60%;
+    }
+    main{position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;}
+    .TS:hover:after{
+         border-left:1.6rem solid #fbb435;
+         border-top: 1.6rem solid transparent;
+         border-bottom: 1.6rem solid transparent;
+         right:-2.5rem;
+         top:0.8rem;
+     }
+}
+@media (max-width:385px){
+    html{
+        font-size: 55%;
+    }
+    main{position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;}
+}
+@media (max-width:355px){
+    html{
+        font-size: 50%;
+    }
+    main{position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;}
+    .TS:hover:after{
+        border-left:1.4rem solid #fbb435;
+        border-top: 1.4rem solid transparent;
+        border-bottom: 1.4rem solid transparent;
+        right:-2.5rem;
+        top:0.5rem;
     }
 }
