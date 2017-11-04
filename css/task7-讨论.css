@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding: 0;
+    font:2.5rem 宋体;
+}
+html{
+    font-size: 62.5%;
+}
+ul,li{
+    text-decoration: none;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #29bde0;
+}
+/*顶部*/
+header{
+   text-align: center;
+    color:white ;
+}
+header p{
+    font-size: 3.5rem;
+}
+header:before{
+    content: url("../image/images-task7/矩形 6 拷贝 3.png");
+    position: absolute;
+    left: 1rem;
+    top:0.2rem;
+}
+header:after{
+    content: url("../image/images-task7/矩形 10 拷贝.png");
+    position: absolute;
+    right: 1rem;
+    top:0.2rem;
+}
+/*main部分*/
+main{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+/*TOUXIANG*/
+.TouXiang{
+    width: 30%;
+    margin: 1.6%;
+}
+.TouXiang div{
+    /*border: 0.2rem solid white;*/
+}
+/*居中盒子*/
+.center{
+    width: 97%;
+    margin: 0 auto;
+}
+.JZ{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.SGD{
+    background-color: #f5c97b;
+    font-size: 2rem;
+    padding:30% 0;
+}
+span{
+    color: white;
+    background-color: #83b09a;
+    /*border: 0.2rem solid white;*/
+    /*border-bottom: none;*/
+}
+/*隐藏的小图标*/
+.yc{
+    visibility: hidden;
+}
+.JZ:hover .yc{
+    visibility: visible;
+}
+.yc ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.yc ul li{
+width: 24%;
+height:3rem;
+margin-top:1rem;
+display: flex;
+justify-content: center;
+}
+li:nth-child(n){
+background-color: white;
+}
+/*边框*/
+.BK{
+    border:0.2rem solid white;
+}
+
+
+/*媒体查询*/
+@media (max-width: 450px) {
+    html{
+        font-size: 58%;
+    }
+}
+@media (max-width: 420px) {
+    html{
+        font-size: 50%;
+    }
+}
