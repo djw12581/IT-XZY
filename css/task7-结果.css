@@ -1,0 +1,24 @@
+div{
+    /*background: url("../image/images-task7/sprit.png") no-repeat;*/
+    /*background-image: url("../image/images-task7/啊_03.png") ;*/
+    /*background-repeat: no-repeat;*/
+    /*background-color: #5fc0cd;*/
+    /*display: inline-table;*/
+    width:100%;
+    height:100px;
+    /*background-image: url("../image/images-task7/sprit.png");*/
+    /*background-repeat: no-repeat;*/
+    /*background-color: #5fc0cd;*/
+    /*background-size: 100%;*/
+}
+#a{
+    width:100%;
+    max-width: 100%;
+    height:100px;
+    display: inline-table;
+    background-image: url("../image/images-task7/sprit.png");
+    background-repeat: no-repeat;
+    background-color: #5fc0cd;
+    background-position: -23px 0px;
+    background-size: 160%;
+}

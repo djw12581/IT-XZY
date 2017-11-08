@@ -18,30 +18,78 @@ body{
 }
 /*顶部*/
 header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 91%;
+    background-color: #29bde0;
    text-align: center;
+    vertical-align: middle;
     color:white ;
+    z-index: 9999;
 }
 header p{
     font-size: 3.5rem;
+    margin-top:1rem;
 }
 header:before{
     content: url("../image/images-task7/矩形 6 拷贝 3.png");
     position: absolute;
-    left: 1rem;
-    top:0.2rem;
+    left: 0.8rem;
+    top:0.6rem;
 }
 header:after{
     content: url("../image/images-task7/矩形 10 拷贝.png");
     position: absolute;
-    right: 1rem;
-    top:0.2rem;
+    right: 0.8rem;
+    top:0.6rem;
 }
 /*main部分*/
 main{
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    margin-top: 58.23px;
+    padding-bottom: 24%;
+}
+main p{
+    margin: 0;
+}
+/*audio及其他*/
+h4{
+    color: white;
+    margin-left:4%;
+    margin-top: 4%;
+}
+main .div{
+    background-color: #b9e9f5;
+    margin-top: 5%;
+    position: relative;
+}
+/*小三角*/
+main .div:after{
+    position: absolute;
+    left:2rem;
+    content: "";
+    border-top: solid #b9e9f5 1rem;
+    border-right: solid transparent 0.5rem;
+    border-left: solid transparent 0.5rem;
+    height:0;
+    width: 0;
+}
+.div p{
+    padding: 3%;
+    font-size: 2rem;
+    overflow: hidden;
+}
+#plan a{
+    display: inline-table;
+    position: relative;
+    width: 1rem;
+    height: 2.8rem;
+    z-index: -1;
+}
+.div p:after{
+    content: url("../image/images-task7/啊_03.png");
+    float: right;
 }
 /*TOUXIANG*/
 .TouXiang{
@@ -66,9 +114,9 @@ main{
 .SGD{
     background-color: #f5c97b;
     font-size: 2rem;
-    padding:30% 0;
+    padding:28%;
 }
-span{
+.BK span{
     color: white;
     background-color: #83b09a;
     /*border: 0.2rem solid white;*/
@@ -88,7 +136,7 @@ align-items: center;
 }
 .yc ul li{
 width: 24%;
-height:3rem;
+height:2.8rem;
 margin-top:1rem;
 display: flex;
 justify-content: center;
@@ -100,16 +148,34 @@ background-color: white;
 .BK{
     border:0.2rem solid white;
 }
-
+/*footer部分*/
+footer{
+    position: fixed;
+    bottom:0;
+    left: 0;
+    right:0;
+}
+footer div{
+    padding:6%;
+    background-color:#29bde0;
+}
+footer div a{
+    background-color: #fbb435;
+    padding: 5%;
+    margin:auto 4%;
+    display: block;
+    text-align: center;
+    color: white;
+}
 
 /*媒体查询*/
-@media (max-width: 450px) {
+@media (max-width: 460px) {
     html{
-        font-size: 58%;
+        font-size: 48%;
     }
 }
-@media (max-width: 420px) {
-    html{
-        font-size: 50%;
+@media (max-width: 380px) {
+    .yc ul li{
+        height:2rem;
     }
 }
