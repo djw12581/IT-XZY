@@ -1,24 +1,110 @@
-div{
-    /*background: url("../image/images-task7/sprit.png") no-repeat;*/
-    /*background-image: url("../image/images-task7/啊_03.png") ;*/
-    /*background-repeat: no-repeat;*/
-    /*background-color: #5fc0cd;*/
-    /*display: inline-table;*/
-    width:100%;
-    height:100px;
-    /*background-image: url("../image/images-task7/sprit.png");*/
-    /*background-repeat: no-repeat;*/
-    /*background-color: #5fc0cd;*/
-    /*background-size: 100%;*/
+*{
+    margin:0;
+    padding:0;
+    font: 2rem 仿宋;
 }
-#a{
-    width:100%;
-    max-width: 100%;
-    height:100px;
-    display: inline-table;
-    background-image: url("../image/images-task7/sprit.png");
-    background-repeat: no-repeat;
-    background-color: #5fc0cd;
-    background-position: -23px 0px;
-    background-size: 160%;
+body{
+    font-size: 62.5%;
+}
+/*顶部header*/
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    background:#29bde0 ;
+    width: 100%;
+    padding-top: 0.8rem;
+}
+.top-center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*顶部字体效果*/
+.font-top{
+    color: white;
+    font-size:3rem;
+}
+/*居中类*/
+.wp{
+    margin:0 auto;
+    width: 96%;
+}
+/*main部分*/
+main{
+    background:#29bde0 ;
+    width: 100%;
+    margin-top:6%;
+    padding-bottom: 6%;
+}
+/*main居中类*/
+.wp-main{
+    margin:0 auto;
+    width: 80%;
+}
+/*main下第一个div*/
+main .content{
+    background: url("../image/images-task7/123_09.png") no-repeat;
+    width: 100%;
+    height: 20rem;
+    background-size: 100% 80%;
+    background-position: center center;
+}
+.wp-main span{
+    font-size: 2.5rem;
+    color: #ffc865;
+    font-weight: 700;
+}
+.wp-main h3{
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+.wp-main p span{
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-right: 10%;
+    padding-left: 0;
+    padding-top: 0;
+}
+/*main下面部分*/
+.bottom{
+    margin-top: -1%;
+    border-bottom: solid 1px #bcbcbc;
+}
+.float-time{
+    float: right;
+    color: #bcbcbc;
+}
+.wp-bottom{
+    margin:0 auto;
+    width: 80%;
+}
+.bottom h4{
+    color: #bcbcbc;
+}
+/*footer部分*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    background-color: rgba(41,189,224,0.5);
+    z-index: 9999;
+}
+.bottom-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer button#a{
+    margin:2% 14%;
+}
+footer button#b{
+    margin:2% 14%;
+}
+#aaa{
+    margin-bottom: 9%;
 }
