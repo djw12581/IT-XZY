@@ -27,12 +27,35 @@ header{
     position: fixed;
     z-index: 9999;
 }
+header span{
+    position: absolute;
+
+    display: inline-block;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    width: 5%;
+}
+header span div{
+    margin:4px 0;
+    border:1px solid white;
+}
 /*main部分*/
 main{
     padding-top:12%;
     padding-bottom: 2%;
     background-color: #efefef;
     overflow: hidden;
+}
+main .center .xd{
+    position: relative;
+}
+main .center .xd .jd{
+    position: absolute;
+    right:0;
+    transform:rotate(45deg);
+    border:2px solid #9d9d9d;
+    border-left: none;
+    border-bottom: none;
 }
 /*居中类center*/
 .center{
