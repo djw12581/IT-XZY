@@ -48,22 +48,25 @@ main .content{
     background: url("../image/images-task7/123_09.png") no-repeat;
     width: 100%;
     height: 20rem;
-    background-size: 100% 80%;
+    background-size: 100% auto;
     background-position: center center;
 }
 .wp-main span{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #ffc865;
     font-weight: 700;
 }
 .wp-main h3{
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: white;
     margin: 0;
 }
+.wp-main p{
+    margin-bottom: -0rem;
+}
 .wp-main p span{
     color: white;
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 500;
     padding-right: 10%;
     padding-left: 0;

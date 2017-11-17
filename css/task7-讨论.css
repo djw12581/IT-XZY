@@ -122,19 +122,14 @@ main .div:after{
     /*border: 0.2rem solid white;*/
     /*border-bottom: none;*/
 }
-/*隐藏的小图标*/
-.yc{
-    visibility: hidden;
-}
-.JZ:hover .yc{
-    visibility: visible;
-}
-.yc ul{
+
+ ul{
 display: flex;
 justify-content: space-between;
 align-items: center;
+     visibility: hidden;
 }
-.yc ul li{
+ ul li{
 width: 24%;
 height:2.8rem;
 margin-top:1rem;
@@ -144,6 +139,32 @@ justify-content: center;
 li:nth-child(n){
 background-color: white;
 }
+/*隐藏的小图标*/
+.za:hover #az{
+    visibility: visible;
+}
+.zb:hover #bz{
+     visibility: visible;
+ }
+.zc:hover #cz{
+    visibility: visible;
+}
+.zd:hover #dz{
+    visibility: visible;
+}
+.ze:hover #ez{
+    visibility: visible;
+}
+.zf:hover #fz{
+    visibility: visible;
+}
+.zg:hover #gz{
+    visibility: visible;
+}
+.zh:hover #hz{
+    visibility: visible;
+}
+
 /*边框*/
 .BK{
     border:0.2rem solid white;
