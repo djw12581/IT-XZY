@@ -13,5 +13,22 @@ li{
     background-color: darkorange;
     border-radius: 1rem;
 }
-
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    background-color: darkorange;
+    width: 76%;
+    margin: 0.5rem auto;
+}
+button{
+    outline: none;
+    list-style: none;
+    background-color: darkorange;
+    color: white;
+    border:1px solid darkorange;
+    line-height: 2;
+}
 
