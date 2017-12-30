@@ -341,6 +341,7 @@ section article img{
 }
 .m{
     display: flex;
+    background-color:#ffffff ;
     /*align-items: center;*/
     /*justify-content: space-between;*/
 }
@@ -350,23 +351,26 @@ section article img{
 }
 .c1{
     background: url("../image/image-8/alibaba.png")no-repeat ;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
 }
 .c2{
     background: url("../image/image-8/jry.png")no-repeat ;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
 }
 .c3{
     background: url("../image/image-8/hx.jpg")no-repeat ;
-    background-size: 100% 100%;
-    border: 1px solid transparent;
-    box-shadow:0.2rem 0.2rem 0.4rem #888;
+    background-size: 100% 85%;
+    box-shadow:0rem 0rem 1rem #888;
+    position: relative;
+    z-index: 99;
 }
 .c4{
     background: url("../image/image-8/rl.png")no-repeat ;
-    background-size: 100% 100%;
+    background-size: 100% 90%;
+    background-position: center center;
 }
 .c5{
     background: url("../image/image-8/qny.png")no-repeat ;
-    background-size: 100% 100%;
+    background-size: 100% 80%;
+
 }
