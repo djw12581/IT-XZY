@@ -438,3 +438,10 @@ footer .wid{
     width: 80%;
     margin: 0 auto;
 }
+/*target分页*/
+.menu:not(:target){
+    display: none;
+}
+.menu:target{
+    display: block;
+}
