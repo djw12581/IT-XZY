@@ -1,0 +1,41 @@
+html{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.div1{
+    /*width: 30%;*/
+    /*height: 30%;*/
+    border: 1px solid red;
+}
+.div2{
+    border: 1px solid blue;
+}
+.div1.div2{
+    border: 1px solid yellow;
+    width: 50%;
+}
+.box {
+    padding: 10px;
+    background-color: #cd0000;
+    text-align: center;
+}
+.content {
+    display: inline-block;
+    text-align: left;
+}
+input[type='text'],input[type='checkbox'],input[type='button']{
+    width: 200px;
+    height: 20px;
+    padding: 50px;
+    background: #2b542c;
+}
+textarea,img,select,iframe{
+    width: 200px;
+    height: 20px;
+    padding: 50px;
+    background: #2b542c;
+}
