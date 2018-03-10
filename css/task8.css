@@ -225,10 +225,7 @@ body{
     }
 }
 @media screen and (min-width:1000px) and (max-width:1800px) {
-    .container-fluid>.row-fluid:nth-child(2){
-        height: 9.9rem;
-        /*background: #29b078;*/
-    }
+   
     .con-c p{
         font-size: 4rem;
     }
@@ -241,10 +238,7 @@ body{
     }
 }
 @media screen and (min-width:767px) and (max-width:1000px){
-    .container-fluid>.row-fluid:nth-child(2){
-        height: 9.9rem;
-        /*background: #29b078;*/
-    }
+    
     .right-1{
         text-align: center;
         }
