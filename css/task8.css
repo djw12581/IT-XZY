@@ -204,9 +204,6 @@ body{
     max-width: 9.4rem;
     max-height: 9.4rem;
 }
-#pre a{
-    /*white-space:pre;*/
-}
 .bj10{
     /*height: 17.8rem;*/
     width: 100%;
@@ -215,6 +212,9 @@ body{
 }
 .bj10 img{
     max-width: 20%;
+}
+.asd{
+    margin: 0.5rem
 }
 @media screen and (max-width:1800px){
     html{
@@ -245,6 +245,21 @@ body{
         height: 9.9rem;
         /*background: #29b078;*/
     }
+    .right-1{
+        text-align: center;
+        }
+        .nt {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container-fluid>.row-fluid:nth-child(4) .bj6{
+            width: 100%;
+            margin: 10% 20%;
+        }
+        .bj10 img{
+            max-width: 100%;
+        }
     .con-c p{
         font-size: 2.5rem;
     }
@@ -256,22 +271,23 @@ body{
         font-size: 5rem;
     }
 }
-@media screen and (max-width:767px) {
+
+@media screen and (min-width:480px) and (max-width:767px){
     .right-1{
-    text-align: center;
-    }
-    .nt {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    .container-fluid>.row-fluid:nth-child(4) .bj6{
-        width: 100%;
-        margin: 10% 20%;
-    }
-    .bj10 img{
-        max-width: 100%;
-    }
+        text-align: center;
+        }
+        .nt {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container-fluid>.row-fluid:nth-child(4) .bj6{
+            width: 100%;
+            margin: 10% 20%;
+        }
+        .bj10 img{
+            max-width: 100%;
+        }
     .con-c p{
         font-size: 2rem;
     }
@@ -286,8 +302,11 @@ body{
     .container-fluid>.row-fluid:nth-child(2) a{
         margin: 2rem;
     }
+    .container-fluid>.row-fluid:nth-child(4) ul li{
+        margin: 1rem
+    }
 }
-@media screen and (min-width:320px){
+@media screen and (max-width:480px){
     .con-c p{
         font-size: 1rem;
     }
@@ -298,9 +317,46 @@ body{
         font-weight: bold;
         font-size: 2rem;
     }
-
+    .right-1{
+        text-align: center;
+        }
+        .nt {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .container-fluid>.row-fluid:nth-child(4) .bj6{
+            width: 100%;
+            margin: 10% 20%;
+        }
+        .bj10 img{
+            max-width: 100%;
+        }
     .container-fluid>.row-fluid:nth-child(2) a{
         margin: 1rem;
         font-size: 1rem;
+    }
+    .container-fluid>.row-fluid:nth-child(4) .img1{
+        max-height: 3.5rem;
+        max-width: 3.5rem;
+    }
+    .container-fluid>.row-fluid:nth-child(4) .img2{
+        max-width: 5rem;
+        max-height: 1rem;
+        margin: 1rem auto;
+    }
+    .container-fluid>.row-fluid:nth-child(4) .img8 img{
+        max-width:4rem ;
+        max-height:4rem;
+    }
+    .container-fluid>.row-fluid:nth-child(4) .bj7 img{
+        max-width: 6rem;
+        max-height: 6rem;
+    }
+    .img11{
+        width: 11.5rem;
+    }
+    .container-fluid>.row-fluid:nth-child(4) ul li{
+        margin: .5rem
     }
 }

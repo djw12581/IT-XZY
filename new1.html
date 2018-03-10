@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- <picture>
+        <source srcset="./image/images-task8/06.png 2x" media="(min-width: 600px)">
+        <source srcset="./image/images-task8/05.png 3x" media="(min-width: 500px)">
+        <img src="./image/images-task8/04.png" alt="">
+    </picture> -->
+    <!-- <picture>
+        <img src="./image/images-task8/04.png"
+        srcset="./image/images-task8/05.png , ./image/images-task8/06.png " 
+        sizes="(max-width: 500px) 100px, (max-width: 600px) 200px, 300px"
+        alt="">
+    </picture> -->
+    <!-- 按照dpr载入图片 -->
+    <!-- <img src="./image/images-task8/04.png" 
+    srcset="./image/images-task8/05.png 2x, ./image/images-task8/06.png 3x" 
+    alt=""> -->
+<!-- 256w为图片固有尺寸， -->
+    <!-- <img src="./image/images-task8/04.png" 
+    srcset="./image/images-task8/05.png 60w, mm-width-256px.jpg 256w" 计算后的sizes等于多少w（宽度规格）就加载哪张图片
+    sizes="(max-width:500px) 30px, (max-width:600px) 200px, " sizes属性计算值 × dpr 得到最后的 宽度规格
+    alt=""> -->
+    <!-- 艺术方向用picture和source通过media加约束条件 -->
+    <!-- <picture>
+        <source media="(min-width: 500px)" srcset="mm-width-256px.jpg 256w">
+        <source media="(min-width: 400px)" srcset="./image/images-task8/04.png 256w">
+        <source media="(min-width: 300px)" srcset="./image/images-task8/05.png 256w">        
+        <img src="mm-width-256px.jpg" 
+        sizes="(max-width:500px) 30px, (max-width:600px) 200px, "alt="" >
+    </picture> -->
+    <!-- 尺寸密度资源都变化
+    <picture>
+        <source media="(max-width: 800px )" 
+                srcset="mm-width-256px.jpg 256w，mm-width-256px.jpg 512w" 
+                sizes="(min-width: 530px) calc(100vw – 96px), 100vw"
+                >
+        <img src="" alt="">
+    </picture> -->
+    <!-- 语义化表格 -->
+    <!-- <table width="400px">
+        <caption>表格标题</caption>
+        <thead>
+            <tr>
+                <th scope="col">列标题</th>
+                <th scope="col">列标题</th>
+                <th scope="col">列标题</th>
+                <th scope="col">列标题</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">行标题</th>
+                <td>a</td>
+                <td>a</td>
+                <td>a</td>
+            </tr>
+        </tbody>
+    </table> -->
+    <!-- 语义化表单 -->
+    <!-- <form action="" method="post" enctype="multipart/form-data">
+        <section>
+            <h3>表单功能块标题1</h3>
+            <fieldset >
+                <legend>第一组</legend>
+                <p>
+                    <label for="inp1">
+                        <span>用户名</span> 
+                        <input type="text" id="inp1" name="ues_name" placeholder="在此处输入字符"> 
+                        <abbr title="请输入正确的格式">*</abbr>
+                    </label>
+                </p>
+                <p>
+                    <label for="inp2">
+                        <span>密码</span>
+                        <input type="password" id="inp2" name="use_password">
+                        <abbr title="请输入至少6个字符">*</abbr>
+                    </label>
+                </p>
+                <p>
+                    <span>提交：</span>
+                    <input type="submit" value="提交按钮" id="btn1">
+                    <input type="button" value="普通按钮" id="btn2">
+                </p>
+            </fieldset>
+            <fieldset >
+                <legend>第二组</legend>
+                <p>
+                    <span>喜欢的食物：</span>
+                    <label for="inp3">banana</label>
+                    <input type="checkbox" id="inp3" name="" value="" checked>
+                    <label for="inp4">apple</label>
+                    <input type="checkbox" id="inp4" name="" value="">
+                    <label for="inp5">orange</label>
+                    <input type="checkbox" id="inp5" name="" value="">
+                </p>
+                <p>
+                    <span>性别：</span>
+                    <label for="inp5">男</label>
+                    <input type="radio" name="but-1" id="inp5" value="1" checked> 
+                    <label for="inp6">女</label>
+                    <input type="radio" name="but-1" id="inp6" value="2">
+                </p>
+            </fieldset> 
+            <fieldset>
+                <legend>第三组</legend>
+                <p>
+                    <label for="set">多选列表</label>
+                    <select id="set" name="groups" >
+                        <optgroup label="fruits">
+                              <option>Banana</option>
+                              <option selected>Cherry</option>
+                              <option>Lemon</option>
+                        </optgroup>
+                        <optgroup label="vegetables">
+                              <option>Carrot</option>
+                              <option>Eggplant</option>
+                              <option>Potato</option>
+                        </optgroup>
+                    </select>
+                </p>
+            </fieldset> 
+            <fieldset >
+                <legend>第四组</legend>
+                <label for="myFruit">最喜欢的食物</label>
+                <input type="text" id="myFruit" name="fruit" list="fruitList">
+                    
+                <datalist id="fruitList">
+                    <label for="suggestion">or pick a fruit</label>
+                    <select id="suggestion" name="altFruit">
+                        <option>Apple</option>
+                        <option>Banana</option>
+                        <option>Blackberry</option>
+                        <option>Blueberry</option>
+                        <option>Lemon</option>
+                        <option>Lychee</option>
+                        <option>Peach</option>
+                        <option>Pear</option>
+                    </select>
+                </datalist>
+            </fieldset>
+            <fieldset >
+                <legend>第五组</legend>
+                <label for="myDate">时间</label>
+                <input type="date" name="myDate" min="2013-06-01" max="2013-08-31" id="myDate"><br>
+                <label for="file">选择一个文件</label>
+                <input type="file" name="file" id="file" accept="image/*" multiple><br>
+                <meter min="0" max="100" value="50" low="33" high="66" optimum="50"></meter>
+                <progress max="100" value="80"></progress>
+            </fieldset>
+        </section>
+    </form> -->
+    
+</body>
+</html>
