@@ -1,0 +1,32 @@
+aside figure{
+    background-color: white;
+}
+aside figcaption{
+    border-bottom: .01rem solid #adadad;
+}
+aside ul{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+aside ul li{
+    color:#ff650e;
+}
+aside ul li .font-green{
+    color: #29b078;
+}
+aside ul li:hover{
+    list-style-type: initial; 
+}
+aside ul li:hover .font-green{
+    color:#ff650e;
+}
+.bg-w{
+    background-color: white;
+}
+.text-wp{
+    text-indent: 2rem;
+}
+.font-yin{
+    /* color: #999999; */
+    line-height: 1.8rem;
+}
