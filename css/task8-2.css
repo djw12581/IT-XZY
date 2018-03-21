@@ -1,0 +1,36 @@
+.list-h li:hover{
+    background-color: #29b078;
+    color: white;
+}
+.list-h{
+    border-top: .1rem solid #dee2e6;
+}
+.font-12{
+    font-size: .1rem;
+    word-break: break-all;
+}
+.font-r{
+    color: red;
+}
+.shadow{
+    box-shadow: 0 0 1px;
+    
+}
+.afe{
+    position: relative;
+}
+.afe:hover ::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    background: url(../image/images-8/after.jpg) no-repeat ;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    color: white;  
+}
+
+
