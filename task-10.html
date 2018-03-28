@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/task-10.css">
+    <style>
+            footer {
+                background-color: #f9f9f9;
+            }
+    
+            .bg-color {
+                background-color: #fbfcff;
+            }
+    
+            #aaa .col {
+                padding-top: 4px !important;
+                position: relative;
+                background-color: white;
+    
+            }
+    
+            /* #aaa .col::after{
+                position: absolute;
+                content: '';
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                border: 1px solid red;
+                border-radius: 50%;
+            } */
+    
+            .box {
+                counter-reset: counter;
+            }
+    
+            .toper:before {
+                counter-increment: counter;
+            }
+            .toper:before {
+                content: counter(counter);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: black;
+                background-color: white;
+                border-radius: 50%;
+                width: 1rem;
+                height: 1rem;
+                text-align:center;
+                line-height: 1;   
+            }    
+            
+            #aaa .col:hover,#aaa .col:hover:before{
+                background-color: #ff7f02;
+                color: white;
+            }
+        </style>
+</head>
+
+<body>
+    <header class="bg-primary ">
+        <div class="container-fluid  w-75">
+            <div class="row ">
+                <div class="col- ml-auto mr-2">
+                    <div class="row" id="toper">
+                        <div class="text-white bg-primary px-1 col">登录</div>
+                        <div class="text-white bg-primary col px-0 mr-3">注册</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="bg-light">
+        <div class="container-fluid  w-75">
+            <div class="row  ml-auto " id="navbar">
+                <div class="col p-0"></div>
+                <div class="col- p-2 my-4 mx-2 bg-white text-dark rounded">首页</div>
+                <div class="col- p-2 my-4 mx-2 bg-white text-dark rounded">在线定制</div>
+                <div class="col- p-2 my-4 mx-2 bg-white text-dark rounded">标准箱</div>
+                <div class="col- p-2 my-4 mx-2 bg-white text-dark rounded">品质保障</div>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid w-75 pr-4">
+        <div class="row box" id="aaa">
+            <div class="w-50"></div>
+            <div class="col toper "></div>
+            <div class="col toper "></div>
+            <div class="col toper "></div>
+            <div class="col toper "></div>
+        </div>
+    </div>
+    <main>
+        <div class="container-fluid w-75">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset>
+                    <legend class="">
+                        <span class=" text-primary ">|</span>
+                        <span>请按照以下步骤来制定您的纸箱</span>
+                    </legend>
+                    <section>
+                        <div class="bg-light text-primary ">
+                            <img class="" src="./image/images-8/box.png">
+                            <span>
+                                <b>选择箱型</b>
+                            </span>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row bg-color">
+                                <div class="m-3">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline1">对门箱</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline2">飞机盒</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline3">天地盖</label>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group dropdown border ml-auto mr-3 my-2">
+                                    <button type="button" class="bg-white text-dark btn  ">
+                                        查看详情
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split m-1" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropright</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <!-- Dropdown menu links -->
+                                        <a class="dropdown-item" href="">a</a>
+                                        <a class="dropdown-item" href="">a</a>
+                                        <a class="dropdown-item" href="">a</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="bg-light text-primary ">
+                            <img class="" src="./image/images-8/Ruler.png">
+                            <span>
+                                <b>确定尺寸</b>
+                            </span>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row bg-color">
+                                <div class="col- w-75 ml-3">
+                                    <div class="row my-3">
+                                        <div class="col-">
+                                            <div class="custom-control custom-radio mx-3">
+                                                <input type="radio" id="customRadio1" name="customRadio" class=" custom-control-input col">
+                                                <label class="custom-control-label " for="customRadio1">外径</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t4" class="col- mx-1">长</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t4">
+                                                <label for="t4" class="col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t5" class="col- mx-1">宽</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t5">
+                                                <label for="t5" class="col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t6" class="col- mx-1">高</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t6">
+                                                <label for="t6 col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row ">
+                                        <div class="col-">
+                                            <div class="custom-control custom-radio mx-3">
+                                                <input type="radio" id="customRadio2" name="customRadio" class=" custom-control-input col">
+                                                <label class="custom-control-label " for="customRadio2">内径</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t4" class="col- mx-1">长</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t4">
+                                                <label for="t4" class="col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t5" class="col- mx-1">宽</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t5">
+                                                <label for="t5" class="col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="row">
+                                                <label for="t6" class="col- mx-1">高</label>
+                                                <input type="text" class=" form-control p-0 col mx-1" id="t6">
+                                                <label for="t6 col- mx-1">mm</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col- ml-auto my-4">
+                                    <div class="btn-group dropdown border ml-auto mr-3 my-2">
+                                        <button type="button" class="bg-white text-dark btn  ">
+                                            查看详情
+                                        </button>
+                                        <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split m-1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropright</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <!-- Dropdown menu links -->
+                                            <a class="dropdown-item" href="">a</a>
+                                            <a class="dropdown-item" href="">a</a>
+                                            <a class="dropdown-item" href="">a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </section>
+                    <section>
+                        <div class="bg-light text-primary ">
+                            <img src="./image/images-8/Cut-_-Scissors.png" alt="">
+                            <span class="">
+                                <b>选择材质</b>
+                            </span>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row bg-color">
+                                <div class="m-3">
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="aa1" name="aa1" class="custom-control-input">
+                                        <label class="custom-control-label" for="aa1">三层A瓦优质</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="aa2" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="aa2">三层A瓦优质</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="aa3" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="aa3">三层A瓦优质</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline4">三层A瓦优质</label>
+                                    </div>
+                                    <div class="custom-control custom-radio custom-control-inline">
+                                        <input type="radio" id="customRadioInline5" name="customRadioInline1" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadioInline5">三层A瓦优质</label>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group dropdown border ml-auto mr-3 my-2">
+                                    <button type="button" class="bg-white text-dark btn  ">
+                                        查看详情
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle dropdown-toggle-split m-1" data-toggle="dropdown" aria-haspopup="true"
+                                        aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropright</span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <!-- Dropdown menu links -->
+                                        <a class="dropdown-item" href="">a</a>
+                                        <a class="dropdown-item" href="">a</a>
+                                        <a class="dropdown-item" href="">a</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+                </fieldset>
+            </form>
+            <div class="row">
+                <div class="col d-flex justify-content-center align-items-center py-5 my-5">
+                    <button type="button" class="btn btn-danger">下一步</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid ">
+            <div class="row  w-75 mx-auto">
+                <div class="col text-muted py-1 my-5">
+                    <b>51包装网-纸箱包装首选服务平台</b>
+                </div>
+                <div class="col px-0 py-1 my-5">
+                    <span class="px-2">
+                        <a href="">关于我们</a>
+                    </span>
+                    <span class="px-2 text-muted">配送流程</span>
+                    <span class="px-2 text-muted">联系我们</span>
+                    <span class="px-2 text-muted">下单指南</span>
+                    <span class="px-2 text-muted">媒体介绍</span>
+                </div>
+                <div class="col py-1 my-5">
+                    <div class="row">
+                        <div class="col d-flex align-items-center flex-wrap ">
+                            <p class="my-0 text-muted pl-5">TEL:400-0000-000</p>
+                            <p class="my-0 text-muted pl-5">企业QQ:123456789</p>
+                            <p class="my-0 text-muted pl-5">微信号:XXXXXXXXX</p>
+                        </div>
+                        <div class="col- d-flex align-items-center px-0 justify-content-end">
+                            <img src="./image/images-8/技能树首页_50.jpg" alt="" class="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bg-primary text-white text-center ">
+                    <p class="p-1 mb-0">北京五一包装科技有限公司Copyright©2015 51baozhuang.com015 All rights reserved 京icp备9999</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var navbar = document.querySelector('#navbar')
+        var data = navbar.querySelectorAll('div')
+        var index = 0
+
+        for (; index < data.length; index++) {
+            data[index].onmousemove = function () {
+                var classVal = this.getAttribute('class')
+                classVal = classVal.replace('text-dark', 'text-white')
+                classVal = classVal.replace('bg-white', 'bg-primary')
+                this.setAttribute('class', classVal)
+            }
+            data[index].onmouseleave = function () {
+                var classVal = this.getAttribute('class')
+                classVal = classVal.replace('text-white', 'text-dark')
+                classVal = classVal.replace('bg-primary', 'bg-white')
+                this.setAttribute('class', classVal)
+            }
+        }
+        var toper = document.querySelector('#toper')
+        var divs = toper.querySelectorAll('div')
+        for (var i = 0; i < divs.length; i++) {
+            divs[i].onmousemove = function () {
+                var classVal2 = this.getAttribute('class')
+                classVal2 = classVal2.replace('text-white', 'text-dark')
+                classVal2 = classVal2.replace('bg-primary', 'bg-white')
+                this.setAttribute('class', classVal2)
+            }
+            divs[i].onmouseleave = function () {
+                var classVal2 = this.getAttribute('class')
+                classVal2 = classVal2.replace('text-dark', 'text-white')
+                classVal2 = classVal2.replace('bg-white', 'bg-primary')
+                this.setAttribute('class', classVal2)
+            }
+        }
+    </script>
+</body>
+
+</html>
