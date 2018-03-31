@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+}
+.d-flex {
+  display: flex;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+body {
+  background-color: #eff0f4;
+}
+header,
+footer,
+footer div,
+footer div a {
+  background: #5fc0cd;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+input {
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  padding: 10px;
+}
+input:focus {
+  outline: none;
+}
+.float-right {
+  float: right;
+}
+main div {
+  background-color: white;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+main div span {
+  font-size: 30px;
+}
+main div img {
+  max-width: 20px;
+  margin: 10px;
+}
+a:link {
+  outline: none;
+}
+a {
+  text-decoration: none;
+  color: #5fc0cd;
+  margin: 10px;
+}
+footer div {
+  text-align: center;
+}

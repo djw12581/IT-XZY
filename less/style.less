@@ -1,8 +1,69 @@
-@color: #4D926F;
-
-#header {
-  color: @color;
+*{
+  margin: 0;
 }
-h2 {
+.d-flex{
+  display: flex;
+}
+.justify-content-between{
+  justify-content: space-between;
+}
+body{
+  background-color: #eff0f4;
+}
+// 变量
+@color:#5fc0cd;
+@font-color:white;
+@pd:10px;
+@tder:none;
+// 类
+.clas(@cr;@fr;@pr;@tder:none){
+  background: @cr;
+  color: @fr;
+  padding: @pr;
+  text-decoration: @tder;
+}
+.claw(){
+  &:focus{
+   outline: none;
+  }
+}
+header,footer,footer div,footer div a {
+  .clas(@color;@font-color;@pd;@tder);
+}
+input{
+  border-top: transparent;
+  border-bottom: transparent;
+  border-right: transparent;
+  padding: @pd;
+  .claw() 
+}
+.float-right{
+  float: right;
+}
+main div{
+  background-color:white;
+  margin: 10px 0;
+  .clas2(flex, center)
+}
+.clas2(@flex;@center){
+    display: @flex;
+    align-items:@center;
+}
+main div span{
+  font-size: 30px
+}
+main div img{
+  max-width: 20px;
+  margin: @pd;
+}
+a:link{
+  outline: none
+}
+a{
+  text-decoration: none;
   color: @color;
+  margin: 10px
+}
+footer div{
+  text-align: center;
 }
