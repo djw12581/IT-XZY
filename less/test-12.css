@@ -1,0 +1,137 @@
+header {
+  background-color: #5fc0cd;
+  overflow: hidden;
+  padding: 2.5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header img {
+  height: 2.4rem;
+  float: left;
+}
+header p {
+  text-align: center;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 0;
+}
+main {
+  margin-top: 3.6rem;
+  margin-bottom: 3.6rem;
+}
+main section {
+  padding: 10% 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 1.08rem;
+  background: url('../image/image-task4/38a17cec12b0df5f8a4188382ba0e279e7c6e6def0df-X2hc7H.png') no-repeat;
+  background-size: cover;
+}
+main section .f-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5%;
+}
+main section img {
+  max-width: 100%;
+  max-height: 100%;
+}
+main ul {
+  list-style: none;
+  padding: 5%;
+}
+main ul .li1 {
+  padding: 2.5%;
+  border-bottom: 0.09rem solid #999999;
+}
+main ul .li1 div {
+  padding: 0 2.5%;
+  border-left: 0.18rem solid #5fc0cd;
+}
+main ul .li2 {
+  padding: 2.5%;
+  border-bottom: 0.09rem solid #999999;
+}
+main ul .li2 div {
+  margin-right: 5%;
+  display: flex;
+  justify-content: start;
+}
+main ul .li2 div img {
+  max-width: 100%;
+  max-height: 100%;
+}
+main ul .li3,
+main ul .li4,
+main ul .li5,
+main ul .li6 {
+  padding: 2.5%;
+  border-bottom: 0.09rem solid #999999;
+}
+main ul .li3 div,
+main ul .li4 div,
+main ul .li5 div,
+main ul .li6 div {
+  margin-right: 5%;
+  display: flex;
+  justify-content: start;
+}
+main ul .li3 div div p,
+main ul .li4 div div p,
+main ul .li5 div div p,
+main ul .li6 div div p {
+  margin-bottom: 0;
+}
+main ul .li3 div div .b-l,
+main ul .li4 div div .b-l,
+main ul .li5 div div .b-l,
+main ul .li6 div div .b-l {
+  border-left: 0.1rem solid #999999;
+  padding-left: 1.5rem;
+}
+main ul .li3 div div .aaa,
+main ul .li4 div div .aaa,
+main ul .li5 div div .aaa,
+main ul .li6 div div .aaa {
+  white-space: pre;
+}
+main ul .li3 div div .fc,
+main ul .li4 div div .fc,
+main ul .li5 div div .fc,
+main ul .li6 div div .fc {
+  color: #999999;
+}
+main ul .li3 div div .fc3,
+main ul .li4 div div .fc3,
+main ul .li5 div div .fc3,
+main ul .li6 div div .fc3 {
+  color: #e26163;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}
+footer a {
+  margin: 5%;
+  padding: 2%;
+  width: 30%;
+  display: inline-block;
+  background-color: white;
+  border-radius: 0.3rem;
+  color: #5fc0cd;
+  text-align: center;
+  border: 0.144rem solid #5fc0cd;
+}
+footer a:hover {
+  color: white;
+  background-color: #5fc0cd;
+}
