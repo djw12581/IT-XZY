@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+}
+body ul {
+  list-style: none;
+}
+header {
+  background-color: #5fc0cd;
+  padding: 1%;
+  text-align: center;
+  position: relative;
+}
+header div {
+  border-radius: 0.2rem;
+  background-color: #55a8b3;
+  color: white;
+  display: inline-block;
+  line-height: 1.5rem;
+}
+header div span {
+  background-color: white;
+  color: #5fc0cd;
+  border-radius: 0.2rem;
+}
+header div img {
+  position: absolute;
+  right: 1rem;
+  top: 17.5%;
+  max-width: 100%;
+  max-height: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+nav {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+  border-top: 0.1rem solid #999999;
+  border-bottom: 0.1rem solid #999999;
+}
+nav select {
+  border: none;
+  background-color: transparent;
+  color: #999999;
+}
+nav span {
+  margin-top: -0.17rem;
+}
+main {
+  padding-bottom: 19%;
+}
+main ul {
+  padding: 0 5%;
+}
+main ul li {
+  margin: 2.5% 0;
+  border-bottom: 0.1rem solid #999999;
+  color: #999999;
+}
+main ul li .big-font {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+main ul li .big-font span {
+  color: initial;
+  white-space: nowrap;
+}
+main ul li .big-font .wrop {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+main ul li .big-font .red {
+  color: #e26163;
+}
+main ul li .big-font .red:after {
+  content: '>';
+  color: #5fc0cd;
+}
+main ul li .icon1:before {
+  content: "";
+  background: url("../image/imag-task5/task5-3_06.jpg");
+  display: inline-block;
+  background-size: 100%;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -1.1rem;
+}
+main ul li .icon2:before {
+  content: "";
+  background: url("../image/imag-task5/task5-3_03.jpg");
+  display: inline-block;
+  background-size: 100%;
+  width: 1rem;
+  height: 1rem;
+  margin-left: -1.1rem;
+}
+main ul p {
+  padding: 1% 0;
+}
+footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+}
+footer .circle {
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #5fc0cd;
+  text-align: center;
+}
+footer .circle img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 0.4rem;
+}
+footer .tc {
+  text-align: center;
+}
+footer .c1 {
+  color: #5fc0cd;
+}
+footer .c2 {
+  color: #999999;
+}

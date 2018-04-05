@@ -1,0 +1,147 @@
+@bgColor:#5fc0cd;
+@bgColor2:#55a8b3;
+@fontColor1:white;
+@fontColor2:#999999;
+@fontColor3:#e26163;
+@height:1rem;
+@pd:5%;
+*{
+    margin: 0;
+    // padding: 0;
+}
+body{
+    ul{
+        list-style: none;
+    }
+}
+header{
+    background-color: @bgColor;
+    padding: @pd*.2 ;
+    text-align: center;
+    position: relative;
+    div{
+        border-radius:@height*.2;
+        background-color: @bgColor2;
+        color: @fontColor1;
+        display: inline-block;
+        line-height: @height*1.5;
+        span{
+            background-color: @fontColor1;
+            color: @bgColor;
+            border-radius:@height*.2;
+        }
+        img{
+            position: absolute;
+            right: @height;
+            top: @pd*3.5;
+            max-width: 100%;
+            max-height: 100%;
+            width: @height*1.2;
+            height: @height*1.2;
+        }
+    }
+}
+nav{
+    display: flex;
+    padding: 0;margin: 0;
+    justify-content: space-around;
+    border-top: @height*.1 solid @fontColor2;
+    border-bottom: @height*.1 solid @fontColor2;
+    select{
+        border: none;
+        background-color: transparent;
+        color: @fontColor2;
+    }
+    span{
+        margin-top: -0.17rem;
+    }
+}
+.cal(){
+    margin: @pd*.5 0; 
+    border-bottom: @height*.1 solid @fontColor2;
+    color: @fontColor2;
+    .big-font{
+        font-size: @height*1.2;
+        display: flex;
+        justify-content: space-between;
+        span{
+            color: initial; 
+            white-space: nowrap;
+        }
+        .wrop{
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .red{
+            color: @fontColor3;
+            &:after{
+                content: '>';
+                color: @bgColor;
+            }
+        }
+    }
+    .icon1{
+        &:before{
+            content: "";
+            background:url("../image/imag-task5/task5-3_06.jpg");
+            display: inline-block;
+            background-size: 100%;
+            width:@height;
+            height: @height;
+            margin-left:-@height*1.1;
+        }
+    }
+    .icon2{
+        &:before{
+            content: "";
+            background:url("../image/imag-task5/task5-3_03.jpg");
+            display: inline-block;
+            background-size: 100%;
+            width:@height;
+            height: @height;
+            margin-left:-@height*1.1;
+        }
+    } 
+}
+main{
+    padding-bottom: @pd*3.8;
+    ul{
+        padding: 0 @pd;
+        li{  
+           .cal();
+        }
+        p{
+            padding: @pd*.2 0;
+        }
+    }
+}
+footer{
+    background-color: @fontColor1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    .circle{
+        border-radius: @pd*10;
+        width: @height*3.5;
+        height: @height*3.5;
+        background-color: @bgColor;
+        text-align: center;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            margin-top: @height*.4;
+        }
+    }
+    .tc{
+        text-align: center;
+    }
+    .c1{
+        color: @bgColor;
+    }
+    .c2{
+        color: @fontColor2;
+    }
+}
