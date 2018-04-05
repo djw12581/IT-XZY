@@ -36,16 +36,20 @@ nav {
   padding: 0;
   margin: 0;
   justify-content: space-around;
-  border-top: 0.1rem solid #999999;
-  border-bottom: 0.1rem solid #999999;
+}
+nav #aaaa {
+  border-left: none;
+  border-right: none;
 }
 nav select {
-  border: none;
-  background-color: transparent;
+  width: 33.3%;
+  padding: 0.5rem;
   color: #999999;
+  display: inline-block;
+  text-align: center;
 }
-nav span {
-  margin-top: -0.17rem;
+nav select:focus {
+  outline: none;
 }
 main {
   padding-bottom: 19%;
@@ -70,6 +74,7 @@ main ul li .big-font span {
 main ul li .big-font .wrop {
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-left: 1rem;
 }
 main ul li .big-font .red {
   color: #e26163;
@@ -85,7 +90,6 @@ main ul li .icon1:before {
   background-size: 100%;
   width: 1rem;
   height: 1rem;
-  margin-left: -1.1rem;
 }
 main ul li .icon2:before {
   content: "";
@@ -94,13 +98,12 @@ main ul li .icon2:before {
   background-size: 100%;
   width: 1rem;
   height: 1rem;
-  margin-left: -1.1rem;
 }
 main ul p {
   padding: 1% 0;
 }
 footer {
-  background-color: white;
+  background-color: #f0f0f0;
   position: fixed;
   bottom: 0;
   left: 0;
@@ -110,15 +113,15 @@ footer {
 }
 footer .circle {
   border-radius: 50%;
-  width: 3.5rem;
-  height: 3.5rem;
+  width: 3.8rem;
+  height: 3.8rem;
   background-color: #5fc0cd;
   text-align: center;
 }
 footer .circle img {
   max-width: 100%;
   max-height: 100%;
-  margin-top: 0.4rem;
+  margin-top: 0.5rem;
 }
 footer .tc {
   text-align: center;

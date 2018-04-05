@@ -19,7 +19,6 @@ header p {
 }
 main {
   margin-top: 3.6rem;
-  margin-bottom: 3.6rem;
 }
 main section {
   padding: 10% 0;
@@ -29,6 +28,10 @@ main section {
   font-size: 1.08rem;
   background: url('../image/image-task4/38a17cec12b0df5f8a4188382ba0e279e7c6e6def0df-X2hc7H.png') no-repeat;
   background-size: cover;
+}
+main section .asd {
+  width: 6rem;
+  height: 6rem;
 }
 main section .f-center {
   display: flex;
@@ -44,6 +47,7 @@ main section img {
 main ul {
   list-style: none;
   padding: 5%;
+  margin-bottom: 0;
 }
 main ul .li1 {
   padding: 2.5%;
@@ -113,10 +117,6 @@ main ul .li6 div div .fc3 {
   color: #e26163;
 }
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
   display: flex;
   justify-content: center;
 }

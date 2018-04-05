@@ -31,9 +31,12 @@ header{
 }
 main{
     margin-top:@height*2.4;
-    margin-bottom: @height*2.4;
     section{
         padding: @pd*2 0;
+        .asd{
+            width: @height*4;
+            height: @height*4;
+        }
         .flexCenter();
         color: @fontColor1;
         font-size: @fontSize*.6;
@@ -63,6 +66,7 @@ main{
     ul{
         list-style: none;
         padding: @pd;
+        margin-bottom: 0;
         .li1{
             .cal();
             div{
@@ -107,10 +111,10 @@ main{
     }
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
+    // right: 0;
     .flexCenter();
     a{
         margin:  @pd;

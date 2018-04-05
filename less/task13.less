@@ -45,15 +45,21 @@ nav{
     display: flex;
     padding: 0;margin: 0;
     justify-content: space-around;
-    border-top: @height*.1 solid @fontColor2;
-    border-bottom: @height*.1 solid @fontColor2;
-    select{
-        border: none;
-        background-color: transparent;
-        color: @fontColor2;
+    #aaaa{
+        border-left: none;
+        border-right: none;
     }
-    span{
-        margin-top: -0.17rem;
+    select{
+        width: 33.3%;
+        padding: @height*.5 ;
+        color: @fontColor2;
+        display: inline-block;
+            text-align: center;
+        &:focus{
+            outline: none;
+        }
+       option{
+       }
     }
 }
 .cal(){
@@ -71,6 +77,7 @@ nav{
         .wrop{
             overflow: hidden;
             text-overflow: ellipsis;
+            margin-left: @height;
         }
         .red{
             color: @fontColor3;
@@ -79,6 +86,7 @@ nav{
                 color: @bgColor;
             }
         }
+        
     }
     .icon1{
         &:before{
@@ -88,7 +96,7 @@ nav{
             background-size: 100%;
             width:@height;
             height: @height;
-            margin-left:-@height*1.1;
+            
         }
     }
     .icon2{
@@ -99,7 +107,7 @@ nav{
             background-size: 100%;
             width:@height;
             height: @height;
-            margin-left:-@height*1.1;
+            
         }
     } 
 }
@@ -116,7 +124,7 @@ main{
     }
 }
 footer{
-    background-color: @fontColor1;
+    background-color: #f0f0f0;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -125,14 +133,14 @@ footer{
     justify-content: space-around;
     .circle{
         border-radius: @pd*10;
-        width: @height*3.5;
-        height: @height*3.5;
+        width: @height*3.8;
+        height: @height*3.8;
         background-color: @bgColor;
         text-align: center;
         img{
             max-width: 100%;
             max-height: 100%;
-            margin-top: @height*.4;
+            margin-top: @height*.5;
         }
     }
     .tc{
