@@ -1,0 +1,150 @@
+@bgcolor:#29bde0;
+@bgMainColor:#f0f0f0;
+@fontColor:white;
+@fontColor2:#cdcdcd;
+@fontColor3:#fbb435;
+@height:1rem;
+// 文字居中类
+.textCenter(){
+    text-align: center;
+}
+.med(){
+    @media  (max-width:480px) {
+        font-size: @height;
+    }
+}
+body{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+header{
+    background-color: @bgcolor;
+    padding: @height;
+    div{
+        border-top: @height*.2 solid @fontColor;
+        border-bottom: @height*.2 solid @fontColor;
+        width: @height*1.6;
+        height: @height;
+        span{
+            display: inline-block;
+            background: @fontColor;
+            line-height: @height;
+            margin: @height*.4 0;
+            padding: @height*.1 0;
+            width: 100%;
+        }
+        &:hover{
+            ul{
+                list-style: none;
+                background-color: @fontColor;
+                border-right: @height*.2 solid @bgcolor;
+                padding-left: 0;
+                position: fixed;
+                width: 30%;
+                top: -@height;
+                left: 0;
+                bottom: 0;
+                z-index: 99;
+                li{
+                    color: @bgcolor;
+                    white-space: pre;
+                    border-bottom: @height*.1 solid @bgMainColor;
+                    padding: @height*.5 @height;
+                    text-align: center;
+                    line-height: @height;
+                    overflow: hidden;
+                    &::after{
+                        content: '>';
+                        font-size: @height*1.6;
+                        float: right;
+                    }
+                }
+            }
+        }
+        &:not(:hover){
+            ul{
+                 display: none
+            } 
+        }
+    }
+}
+main{
+    background-color:@bgMainColor ;
+    padding: @height @height*2;
+    header{
+        background-color: @fontColor;
+        p{
+            margin: 0 auto;
+            position: relative;
+            .textCenter();
+            color: @fontColor2;
+            font-size: @height*1.6;
+            .med();
+            &::after{
+                content: '>';
+                position: absolute;
+                right: 0;
+                
+            }
+        }
+    }
+    section{
+        .textCenter();
+        margin: @height 0;
+        background-color: @fontColor;
+        header{
+            border-bottom: @height*.05 solid @fontColor3;
+            font-size: @height*1.6;
+            color: @fontColor3;
+            .med();
+        }
+        article{
+            div{
+                margin: @height @height*4;
+                color: @fontColor2;
+            }
+            .b-blue{
+                background-color: @bgcolor;
+                padding: @height*2;
+                color: @fontColor;
+                a{
+                    color: @fontColor;
+                    &:link{
+                        text-decoration: none;
+                        outline: none;
+                    }
+                }
+                &:hover{
+                    position: relative;
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        right: -@height*3;
+                        top: @height*1.5;
+                        width: 0;
+                        height: 0;
+                        border: @height solid;
+                        border-color: transparent transparent transparent @fontColor3;                        
+                    }
+                }
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                display: flex;
+                justify-content: center;
+                li{
+                   width: @height;
+                   height: @height;
+                   margin: @height*.3;
+                   background-color: @bgMainColor;
+                   border-radius: 50%; 
+                   &:hover{
+                    background-color: @bgcolor; 
+                   }
+                }
+            }
+        }
+    }
+}

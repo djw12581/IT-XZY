@@ -1,0 +1,103 @@
+body {
+  background-color: #29bde0;
+}
+header {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header span {
+  color: white;
+  font-size: 1.2rem;
+}
+header img {
+  width: 2rem;
+  height: 2rem;
+}
+main aside {
+  padding: 0.5rem;
+  background-color: #97f0e4;
+  color: rgba(0, 0, 0, 0.7);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+aside + div {
+  padding: 1rem 2rem;
+  color: white;
+}
+aside + div::after {
+  content: '';
+  position: absolute;
+  top: 6rem;
+  left: 3rem;
+  width: 0;
+  height: 0;
+  border: 1rem solid;
+  border-color: transparent transparent transparent #97f0e4;
+}
+section .f-c {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .f-c div {
+  width: 26%;
+  border: 0.1rem solid white;
+  text-align: center;
+  position: relative;
+}
+section .f-c div p {
+  margin: 0;
+  padding: 2rem;
+  background-color: #fbb435;
+  color: rgba(0, 0, 0, 0.7);
+}
+section .f-c div p + p {
+  padding: 0;
+  background-color: #83b09a;
+  color: white;
+}
+section .f-c div .b-icon {
+  visibility: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: none;
+}
+section .f-c div .b-icon span {
+  display: inline-block;
+  background-color: white;
+  margin-top: 0.5rem;
+  width: 20%;
+  height: 1.4rem;
+}
+section .f-c div .b-icon span img {
+  max-width: 100%;
+  max-height: 100%;
+}
+section .f-c div:hover .b-icon {
+  visibility: visible;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #29bde0;
+  padding: 1rem;
+}
+footer button {
+  background-color: #fbb435;
+  width: 80%;
+  margin: auto;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-size: 1.2rem;
+}

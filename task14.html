@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.bootcss.com/normalize/8.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./less/less库/main.css">
+</head>
+
+<body id="bd">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <header>
+        <div>
+            <span></span>
+            <ul id="wc">
+                <li>公告</li>
+                <li>设置</li>
+                <li>帮助</li>
+                <li>关于</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <header>
+            <p>上次游戏：捉鬼猜词版</p>
+        </header>
+        <section>
+            <header>捉鬼游戏</header>
+            <article>
+                <div class="b-blue"><a href="task15.html">简化版</a></div>
+                <div>有1133个用户正在玩此游戏</div>
+                <div class="b-blue">猜词版</div>
+                <div>有1133个用户正在玩此游戏</div>
+                <div class="b-blue">白痴版</div>
+                <div>有1133个用户正在玩此游戏</div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </article>
+        </section>
+    </main>
+   <script type="text/javascript">
+       window.onload=function(){
+            var wc =document.querySelector('#wc');
+            var bd =document.querySelector('#bd');
+            var aa=wc.style.left;
+            wc.onmousemove=function(){
+                bd.style.left='30%';
+            }
+            wc.onmouseout=function(){
+                bd.style.left='0';
+            }
+       }
+      
+   </script>
+</body>
+
+</html>
